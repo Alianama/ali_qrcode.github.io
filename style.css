@@ -1,44 +1,65 @@
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
   font-family: "Roboto", sans-serif;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
 #header {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.09);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 #content {
-  width: 80%;
-  margin-top: 4%;
-  display: flex;
-  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .inputContainer {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.inputContainer label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.inputContainer input,
+.inputContainer select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 #formButton {
-  margin-top: 5%;
-  background-color: rgb(250, 250, 250);
-  border: 0.5px solid grey;
-  border-radius: 8px;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.09);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#formButton:hover {
+  background-color: #45a049;
+}
+
+#canvas {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
